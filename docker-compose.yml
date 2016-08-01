@@ -8,3 +8,8 @@ services:
       - "5000:5000"
     environment:
       - SKIP_UPDATE=true
+      - AUTH_SERVICE=ptc
+      - USERNAME=AdPetram
+      - PASSWORD=Pnee7twnCZZ7Q
+      - GMAPS_KEY=AIzaSyAr-hiOaS5VgDNdbwgycoWNNU2Eab5Xdv4
+      - LOCATION="55425"

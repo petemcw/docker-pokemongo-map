@@ -33,7 +33,6 @@ docker create --name=pokemongo-map \
 * `-e USERNAME`
 * `-e PASSWORD`
 * `-e LOCATION` for default starting point which can be address or coordinates
-* `-e NUM_THREADS` for number of search threads
 * `-e SCAN_DELAY` for time delay between requests in scan threads
 * `-e STEP_LIMIT` for number of steps to scan from starting location
 * `-e GMAPS_KEY` for Google Maps JavaScript API key
