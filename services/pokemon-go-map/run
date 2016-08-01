@@ -1,0 +1,7 @@
+#!/bin/sh
+
+# change to install directory before running
+cd /app
+
+# Uses values in config file
+exec /sbin/setuser ash python runserver.py

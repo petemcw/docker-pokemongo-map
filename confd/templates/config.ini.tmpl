@@ -1,0 +1,17 @@
+# Authentication settings
+auth-service: {{ getenv "AUTH_SERVICE" }}
+username: {{ getenv "USERNAME" }}
+password: {{ getenv "PASSWORD" }}
+
+# Search settings
+location: {{ getenv "LOCATION" }}
+num-threads: {{ getenv "NUM_THREADS" }}
+scan-delay: {{ getenv "SCAN_DELAY" }}
+step-limit: {{ getenv "STEP_LIMIT" }}
+
+# Misc
+gmaps-key: {{ getenv "GMAPS_KEY" }}
+
+# Webserver settings
+host: {{ getenv "HOST" }}
+port: {{ getenv "PORT" }}

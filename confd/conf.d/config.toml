@@ -1,0 +1,10 @@
+[template]
+# Conifguration template
+src     = "config.ini.tmpl"
+# Rendered configuration file location
+dest    = "/app/config/config.ini"
+
+# File ownership
+owner   = "ash"
+group   = "ash"
+mode    = "0644"
