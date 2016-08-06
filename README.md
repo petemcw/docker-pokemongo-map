@@ -28,16 +28,20 @@ docker create --name=pokemongo-map \
 
 **Parameters**
 
-* `-e SKIP_UPDATE` for preventing base OS package updates
-* `-e AUTH_SERVICE` for authentication service. Default is `ptc`
+* `-e SKIP_UPDATE` - prevents base OS package updates
+* `-e AUTH_SERVICE` - Pokémon Go authentication service. Default is `ptc`
 * `-e USERNAME`
 * `-e PASSWORD`
-* `-e LOCATION` for default starting point which can be address or coordinates
-* `-e SCAN_DELAY` for time delay between requests in scan threads
-* `-e STEP_LIMIT` for number of steps to scan from starting location
-* `-e GMAPS_KEY` for Google Maps JavaScript API key
-* `-e HOST` for web server listening IP address
-* `-e PORT` for web server listening port
+* `-e LOCATION` - default starting point which can be address or coordinates
+* `-e SCAN_DELAY` - time delay between requests in scan threads
+* `-e STEP_LIMIT` - number of steps to scan from starting location
+* `-e GMAPS_KEY` - Google Maps JavaScript API key
+* `-e HOST` - web server listening IP address
+* `-e PORT` - web server listening port
+* `-e MYSQL_HOST` - MySQL host name (default is `sqlite`)
+* `-e MYSQL_NAME` - MySQL database name
+* `-e MYSQL_USER` - MySQL username
+* `-e MYSQL_PASS` - MySQL password
 
 It is based on phusion-baseimage with ssh removed, for shell access whilst the container is running do `docker exec -it pokemongo-map /sbin/my_init -- /bin/bash`.
 

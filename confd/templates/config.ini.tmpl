@@ -1,16 +1,25 @@
 # Authentication settings
-auth-service: {{ getenv "AUTH_SERVICE" }}
-username: {{ getenv "USERNAME" }}
-password: {{ getenv "PASSWORD" }}
+auth-service: {{getv "/auth/service"}}
+username: {{getv "/username"}}
+password: {{getv "/password"}}
 
 # Search settings
-location: {{ getenv "LOCATION" }}
-scan-delay: {{ getenv "SCAN_DELAY" }}
-step-limit: {{ getenv "STEP_LIMIT" }}
+location: {{getv "/location"}}
+scan-delay: {{getv "/scan/delay"}}
+step-limit: {{getv "/step/limit"}}
 
 # Misc
-gmaps-key: {{ getenv "GMAPS_KEY" }}
+gmaps-key: {{getv "/gmaps/key"}}
 
 # Webserver settings
-host: {{ getenv "HOST" }}
-port: {{ getenv "PORT" }}
+host: {{getv "/host"}}
+port: {{getv "/port"}}
+
+{{if getv "/mysql/host"}}
+# Database settings
+db-type: mysql
+db-host: {{getv "/mysql/host"}}
+db-name: {{getv "/mysql/name"}}
+db-user: {{getv "/mysql/user"}}
+db-pass: {{getv "/mysql/pass"}}
+{{end}}

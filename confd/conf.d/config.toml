@@ -8,3 +8,17 @@ dest    = "/app/config/config.ini"
 owner   = "ash"
 group   = "ash"
 mode    = "0644"
+
+# Keys
+keys = [
+    "/auth/service",
+    "/username",
+    "/password",
+    "/location",
+    "/scan/delay",
+    "/step/limit",
+    "/gmaps/key",
+    "/host",
+    "/port",
+    "/mysql"
+]
