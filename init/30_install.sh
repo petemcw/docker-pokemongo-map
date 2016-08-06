@@ -12,7 +12,7 @@ if [ ! -d "/app/.git" ]; then
     echo "-----> Done!"
 
     echo "==> Installing application"
-    pip install --no-cache-dir -r requirements.txt
+    pip install -r requirements.txt
     npm install
     npm install -g grunt-cli
     npm install node-sass
@@ -26,7 +26,7 @@ else
     echo "-----> Done!"
 
     echo "==> Installing application"
-    pip install --upgrade --no-cache-dir -r requirements.txt
+    pip install --upgrade -r requirements.txt
     npm update
     grunt build
     chown -R ash:ash /app
